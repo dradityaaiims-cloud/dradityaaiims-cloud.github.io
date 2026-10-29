@@ -1,12 +1,11 @@
 // Every simulator on the hub. To add one, add an entry here (and a 16:10 thumbnail in assets/sims/).
-// system groups the list; order within a system is the order shown.
+// system groups the list; order within a system is the order shown. title is the archived Zenodo title, used only in citations.
 export const SYSTEMS = ['Respiratory', 'Cardiovascular'];
 
 export const SIMS = [
   {
     system: 'Respiratory',
-    name: "Dr. Singh's Vent Sim",
-    what: 'Mechanical ventilator simulator',
+    name: 'Ventilator Simulator',
     url: 'https://dradityaaiims-cloud.github.io/vent-sim/',
     repo: 'https://github.com/dradityaaiims-cloud/vent-sim',
     doi: '10.5281/zenodo.23630782',
@@ -18,8 +17,7 @@ export const SIMS = [
   },
   {
     system: 'Respiratory',
-    name: "Dr. Singh's Bronch Sim",
-    what: 'Bronchoscopy and robotic bronchoscopy simulator',
+    name: 'Bronchoscopy Simulator',
     url: 'https://dradityaaiims-cloud.github.io/bronchoscopy-sim/',
     repo: 'https://github.com/dradityaaiims-cloud/bronchoscopy-sim',
     doi: '10.5281/zenodo.23644439',
@@ -31,8 +29,7 @@ export const SIMS = [
   },
   {
     system: 'Cardiovascular',
-    name: "Dr. Singh's RHC Sim",
-    what: 'Right heart catheterization waveform simulator',
+    name: 'Right Heart Catheterization Simulator',
     url: 'https://dradityaaiims-cloud.github.io/rhc-sim/',
     repo: 'https://github.com/dradityaaiims-cloud/rhc-sim',
     doi: '10.5281/zenodo.23743411',
@@ -44,8 +41,7 @@ export const SIMS = [
   },
   {
     system: 'Cardiovascular',
-    name: "Dr. Singh's Art Line Sim",
-    what: 'Arterial line and pressure transducer simulator',
+    name: 'Arterial Line Simulator',
     url: 'https://dradityaaiims-cloud.github.io/artline-sim/',
     repo: 'https://github.com/dradityaaiims-cloud/artline-sim',
     doi: '10.5281/zenodo.23750835',
@@ -57,8 +53,7 @@ export const SIMS = [
   },
   {
     system: 'Cardiovascular',
-    name: "Dr. Singh's EP Sim",
-    what: 'Electrophysiology study and pacemaker simulator',
+    name: 'EP and Pacing Simulator',
     url: 'https://dradityaaiims-cloud.github.io/ep-sim/',
     repo: 'https://github.com/dradityaaiims-cloud/ep-sim',
     doi: '10.5281/zenodo.23751660',

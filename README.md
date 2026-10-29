@@ -1,4 +1,4 @@
-# Dr. Singh's Medical Simulators (hub)
+# Medical Simulators (hub)
 
 Static site, no build step. Open `index.html` through any static server, e.g. `npx vite .`.
 

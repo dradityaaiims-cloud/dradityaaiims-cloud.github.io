@@ -10,7 +10,7 @@ document.getElementById('sim-list').innerHTML = SYSTEMS.map((sys) => `
     <a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="${esc(s.thumb)}" alt="" width="1440" height="900" loading="lazy" /></a>
     <div>
       <h4>${esc(s.name)}</h4>
-      <p class="meta">${esc(s.what)}, version ${esc(s.version)}</p>
+      <p class="meta">Version ${esc(s.version)}</p>
       <p>${esc(s.blurb)}</p>
       <p class="sim-links">${ext(s.url, 'Open the simulator')} ${ext(s.repo, 'Source code')} ${ext('https://doi.org/' + s.doi, 'DOI ' + s.doi)}</p>
     </div>
