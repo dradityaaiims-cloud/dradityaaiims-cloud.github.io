@@ -1,0 +1,73 @@
+// Every simulator on the hub. To add one, add an entry here (and a 16:10 thumbnail in assets/sims/).
+// system groups the list; order within a system is the order shown.
+export const SYSTEMS = ['Respiratory', 'Cardiovascular'];
+
+export const SIMS = [
+  {
+    system: 'Respiratory',
+    name: "Dr. Singh's Vent Sim",
+    what: 'Mechanical ventilator simulator',
+    url: 'https://dradityaaiims-cloud.github.io/vent-sim/',
+    repo: 'https://github.com/dradityaaiims-cloud/vent-sim',
+    doi: '10.5281/zenodo.23630782',
+    version: '0.2.1',
+    year: 2026,
+    thumb: 'assets/sims/vent-sim.png',
+    title: "Dr. Singh's Vent Sim: an open educational mechanical ventilator simulator",
+    blurb: 'Ventilate normal, COPD and ARDS lungs on a live monitor. Read the loops, order a blood gas on demand and work through ten troubleshooting cases with hints and scoring.',
+  },
+  {
+    system: 'Respiratory',
+    name: "Dr. Singh's Bronch Sim",
+    what: 'Bronchoscopy and robotic bronchoscopy simulator',
+    url: 'https://dradityaaiims-cloud.github.io/bronchoscopy-sim/',
+    repo: 'https://github.com/dradityaaiims-cloud/bronchoscopy-sim',
+    doi: '10.5281/zenodo.23644439',
+    version: '0.2.0',
+    year: 2026,
+    thumb: 'assets/sims/bronchoscopy-sim.png',
+    title: "Dr. Singh's Bronchoscopy Simulator: an open educational bronchoscopy and robotic bronchoscopy simulator",
+    blurb: 'Drive a scope through a 3D airway tree from the keyboard. Learn the segments, name the lymph node stations, practise EBUS and steer a robotic catheter to a peripheral lesion.',
+  },
+  {
+    system: 'Cardiovascular',
+    name: "Dr. Singh's RHC Sim",
+    what: 'Right heart catheterization waveform simulator',
+    url: 'https://dradityaaiims-cloud.github.io/rhc-sim/',
+    repo: 'https://github.com/dradityaaiims-cloud/rhc-sim',
+    doi: '10.5281/zenodo.23743411',
+    version: '0.1.0',
+    year: 2026,
+    thumb: 'assets/sims/rhc-sim.png',
+    title: "Dr. Singh's RHC Simulator: an open educational right heart catheterization waveform simulator",
+    blurb: 'Float a balloon catheter through a transparent 3D heart, from the vena cava to wedge, and watch the pressure trace change beat by beat against the ECG. Includes valve disease, tamponade and artefacts.',
+  },
+  {
+    system: 'Cardiovascular',
+    name: "Dr. Singh's Art Line Sim",
+    what: 'Arterial line and pressure transducer simulator',
+    url: 'https://dradityaaiims-cloud.github.io/artline-sim/',
+    repo: 'https://github.com/dradityaaiims-cloud/artline-sim',
+    doi: '10.5281/zenodo.23750835',
+    version: '1.0.2',
+    year: 2026,
+    thumb: 'assets/sims/artline-sim.png',
+    title: "Dr. Singh's Art Line Simulator: an open educational arterial line and pressure transducer simulator",
+    blurb: 'The true arterial pressure and the number on the monitor are two separate signals. Level, zero and flush the line, break the chain on purpose and fix it in twelve troubleshooting cases.',
+  },
+  {
+    system: 'Cardiovascular',
+    name: "Dr. Singh's EP Sim",
+    what: 'Electrophysiology study and pacemaker simulator',
+    url: 'https://dradityaaiims-cloud.github.io/ep-sim/',
+    repo: 'https://github.com/dradityaaiims-cloud/ep-sim',
+    doi: '10.5281/zenodo.23751660',
+    version: '1.0.1',
+    year: 2026,
+    thumb: 'assets/sims/ep-sim.png',
+    title: "Dr. Singh's EP Simulator: an open educational electrophysiology study and pacing simulator",
+    blurb: 'Pace a simulated heart from four standard catheters and watch the impulse travel in 3D while the electrograms unfold. Then program a pacemaker in the same heart and solve graded cases.',
+  },
+];
+
+export const apa = (s) => `Singh, A. (${s.year}). ${s.title} (Version ${s.version}) [Computer software]. Zenodo. https://doi.org/${s.doi}`;
