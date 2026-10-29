@@ -25,6 +25,7 @@ hero.src = newest.thumb;
 hero.alt = `Screenshot of ${newest.name}`;
 
 // Email split so it is not plain text in the page source (same as the simulators).
+document.getElementById('mail-text').textContent = `${'draditya.aiims'}@${'gmail.com'}`;
 document.getElementById('mail').href = `mailto:${'draditya.aiims'}@${'gmail.com'}?subject=${encodeURIComponent('Simulator feedback')}&body=${encodeURIComponent('Simulator:\nWhat I expected:\nWhat happened:\nBrowser and device:\n')}`;
 
 const nav = document.getElementById('nav');

@@ -50,6 +50,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .actions { display: flex; flex-wrap: wrap; gap: 28px; align-items: center; margin-top: 32px; }
 .hero > *, .sim > *, .about > * { min-width: 0; }
 .centre-actions { justify-content: center; }
+#mail-text { color: var(--ink); font-weight: 500; user-select: all; }
 .hero-art { margin: 0; }
 .panel { background: var(--surface); padding: 48px; }
 .panel img { border: 1px solid var(--line); transform: rotate(2deg); animation: settle 1s ease-out; }
