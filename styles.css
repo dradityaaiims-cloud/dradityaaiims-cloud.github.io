@@ -103,3 +103,29 @@ footer p { margin: 0; max-width: 62ch; }
   .portrait { max-width: 320px; }
   footer { flex-direction: column; }
 }
+
+/* Boba, the assistant dog */
+.boba { position: fixed; right: 16px; bottom: 16px; z-index: 20; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; pointer-events: none; }
+.boba > * { pointer-events: auto; }
+.boba-dog { position: relative; width: 104px; height: 104px; padding: 0; border: 0; background: transparent; cursor: pointer; transform-origin: 50% 90%; }
+.boba-dog img { width: 100%; height: 100%; image-rendering: pixelated; user-select: none; }
+.boba-bubble { position: relative; width: min(320px, calc(100vw - 32px)); background: var(--paper); border: 1.5px solid var(--ink); padding: 14px 18px 16px; font-size: 16px; line-height: 1.5; }
+.boba-bubble::after { content: ""; position: absolute; right: 40px; bottom: -9px; width: 14px; height: 14px; background: var(--paper); border-right: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); transform: rotate(45deg); }
+.boba-text { margin: 0 52px 10px 0; }
+.boba-x { position: absolute; top: 12px; right: 14px; border: 0; background: none; padding: 0; font: 500 14px/1.4 var(--sans); text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); cursor: pointer; }
+.boba-x:hover { color: var(--accent); }
+.boba-btns { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.boba-btns > * { font: 500 16px/1.4 var(--sans); color: var(--ink); background: none; border: 0; padding: 0; text-align: left; cursor: pointer; text-decoration: underline 1px; text-underline-offset: 4px; }
+.boba-btns > *:hover { text-decoration-color: var(--accent); }
+.boba-zzz { position: absolute; top: 0; right: 0; font: 500 14px/1 var(--sans); color: var(--muted); opacity: 0; letter-spacing: 2px; }
+.boba-dog.nap { opacity: .85; transform: translateY(6px) scale(.95); }
+.boba-dog.nap .boba-zzz { opacity: 1; animation: boba-zzz 2s ease-in-out infinite; }
+.boba-dog.wag { animation: boba-wag .9s ease-in-out; }
+.boba-dog.hop { animation: boba-hop .5s ease-out; }
+.boba-dog.zoom { animation: boba-zoom 1.4s ease-in-out; }
+@keyframes boba-wag { 0%, 100% { transform: rotate(0); } 20% { transform: rotate(-6deg); } 40% { transform: rotate(6deg); } 60% { transform: rotate(-5deg); } 80% { transform: rotate(4deg); } }
+@keyframes boba-hop { 0% { transform: translateY(0); } 40% { transform: translateY(-16px); } 100% { transform: translateY(0); } }
+@keyframes boba-zoom { 0% { transform: translateX(0); } 30% { transform: translateX(-200px) scaleX(-1); } 60% { transform: translateX(-100px) scaleX(1); } 100% { transform: translateX(0); } }
+@keyframes boba-zzz { 0%, 100% { transform: translateY(0); opacity: .9; } 50% { transform: translateY(-6px); opacity: .4; } }
+@media (prefers-reduced-motion: reduce) { .boba-dog.wag, .boba-dog.hop, .boba-dog.zoom, .boba-dog.nap .boba-zzz { animation: none; } }
+@media (max-width: 767px) { .boba-dog { width: 72px; height: 72px; } .boba { right: 10px; bottom: 10px; } }
